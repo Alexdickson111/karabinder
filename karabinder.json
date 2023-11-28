@@ -1,0 +1,291 @@
+{
+  "title": "Alex custom keybinds",
+  "rules": [
+    {
+      "description": "modifiers row",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "a"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "a"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "a"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_gui"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "s"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "s"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "s"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_alt"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "d"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "d"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "d"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_control"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "f"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "f"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "f"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_shift"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "l"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "l"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "l"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "right_alt"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "k"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "k"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "k"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "right_control"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "j"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "j"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "j"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "right_shift"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            },
+            "key_code": "semicolon"
+          },
+          "parameters": {
+            "basic.to_delayed_action_delay_milliseconds": 150,
+            "basic.to_if_held_down_threshold_milliseconds": 150
+          },
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "key_code": "semicolon"
+              }
+            ]
+          },
+          "to_if_alone": [
+            {
+              "halt": true,
+              "key_code": "semicolon"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "right_gui"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "simple",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "left_control"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
