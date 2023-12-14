@@ -771,7 +771,7 @@
             }
           ],
           "from": {
-            "key_code": ";"
+            "key_code": "semicolon"
           },
           "to": [
             {
