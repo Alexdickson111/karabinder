@@ -327,20 +327,72 @@
       ]
     },
     {
-      "description": "simple",
+      "description": "toggle main screen",
       "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "caps_lock"
+          {
+              "conditions": [
+                  {
+                      "name": "toggle_screen",
+                      "type": "variable_unless",
+                      "value": 1
+                  }
+              ],
+              "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                      "optional": [
+                          "any"
+                      ]
+                  }
+              },
+              "to": [
+                  {
+                      "set_variable": {
+                          "name": "toggle_screen",
+                          "value": 1
+                      }
+                  },
+                  {
+                      "key_code": "q",
+                      "modifiers": [
+                          "left_alt"
+                      ]
+                  }
+              ],
+              "type": "basic"
           },
-          "to": [
-            {
-              "repeat": true,
-              "key_code": "left_control"
-            }
-          ]
-        }
+          {
+              "conditions": [
+                  {
+                      "name": "toggle_screen",
+                      "type": "variable_if",
+                      "value": 1
+                  }
+              ],
+              "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                      "optional": [
+                          "any"
+                      ]
+                  }
+              },
+              "to": [
+                  {
+                      "set_variable": {
+                          "name": "toggle_screen",
+                          "value": 0
+                      }
+                  },
+                  {
+                      "key_code": "w",
+                      "modifiers": [
+                          "left_alt"
+                      ]
+                  }
+              ],
+              "type": "basic"
+          }
       ]
     },
     {
